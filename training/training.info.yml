@@ -1,0 +1,5 @@
+name: Training Module
+description: This module is used to create a sample work during drupal training.
+core: 8.x
+package: BirlaSoft
+type: module

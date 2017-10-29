@@ -1,0 +1,20 @@
+training.route1: 
+  path: '/hello-training'
+  defaults:
+    _controller: '\Drupal\training\Controller\TrainingController::content'
+  requirements: 
+    _permission: 'access content'
+training.route2: 
+  path: '/hello-training/{api_key}'
+  defaults:
+    _controller: '\Drupal\training\Controller\TrainingController::another_content'
+  requirements: 
+    _permission: 'access content'
+    api_key: '^[a-zA-Z0-9]+'
+training.route3:
+  path: '/admin/config/hello-training'
+  defaults:
+    _form: '\Drupal\training\Form\TrainingConfigForm'
+    _title: 'Config Form'
+  requirements:
+    _permission: 'access content'

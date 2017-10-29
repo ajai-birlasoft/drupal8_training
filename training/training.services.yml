@@ -1,0 +1,4 @@
+services:
+  training.node_json:
+    class: '\Drupal\training\Services\MyTrainingService'
+    public: true

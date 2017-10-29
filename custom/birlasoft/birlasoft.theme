@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * This file contains the methods related to birlasoft theme.
+ */
+function birlasoft_preprocess_html(&$variables) {
+//  print_r($variables);die;
+}
+
+function birlasoft_preprocess_menu_local_tasks(&$vars) {
+  unset($vars['primary']['entity.node.canonical']);
+  unset($vars['primary']['entity.node.version_history']);
+}
+

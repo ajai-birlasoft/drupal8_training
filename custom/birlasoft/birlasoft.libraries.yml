@@ -1,0 +1,6 @@
+birlasoft_training:
+  css:
+    theme:
+      css/custom.css: {media: 'print'}
+  js:
+    js/custom.js: {}
